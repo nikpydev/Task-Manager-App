@@ -4,7 +4,7 @@ const userRouter = require('./routers/user')
 const taskRouter = require('./routers/task')
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 app.use(express.json()) //parses anything being sent from the client side via the http and converts it into json
 app.use(userRouter)
